@@ -10,7 +10,7 @@ public class sin_graph {
 
         for(i = 0; i < 12; i++) System.out.print(" ");
 
-        for(i = 0; i < XMAX / 2 - 1; i++) System.out.print("-");
+        for(i = 0; i < XMAX / 2; i++) System.out.print("-");
 
         System.out.print("*");
 
@@ -39,7 +39,7 @@ public class sin_graph {
                 yFormatted = " " + yFormatted;
             }
 
-            System.out.print(xFormatted + " " + yFormatted);
+            System.out.print(xFormatted + " " + yFormatted + " ");
             for(j = 0; j < YMAX + 1; j++) {
                 System.out.print(lineBuffer[j]);
             }
