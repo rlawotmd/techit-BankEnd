@@ -1,11 +1,11 @@
 public class BankAccount {
     // 멤버변수
-    int bankCode;
-    int accountNo;
-    String owner;
-    int balance;
-    boolean isDormant;
-    int password;
+    private int bankCode;
+    private int accountNo;
+    private String owner;
+    private int balance;
+    private boolean isDormant;
+    private int password;
 
     // 메소드
     void inquiry() {
@@ -14,11 +14,11 @@ public class BankAccount {
     void deposit() {
 
     }
-    void withdraw() {
-
-    }
     void heldInDormant() {
 
+    }
+    void changePassword(int password) {
+        this.password = password;
     }
 
     // 생성자
@@ -33,4 +33,53 @@ public class BankAccount {
         this.password = password;
         this.isDormant = isDormant;
     }
+
+    public int getBankCode() {
+        return bankCode;
+    }
+
+    public void setBankCode(int bankCode) {
+        this.bankCode = bankCode;
+    }
+
+    public int getAccountNo() {
+        return accountNo;
+    }
+
+    public void setAccountNo(int accountNo) {
+        this.accountNo = accountNo;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public boolean isDormant() {
+        return isDormant;
+    }
+
+    public void setDormant(boolean dormant) {
+        isDormant = dormant;
+    }
+
+    public int getPassword() {
+        return password;
+    }
+
+    public void setPassword(int password) {
+        this.password = password;
+    }
+
 }
